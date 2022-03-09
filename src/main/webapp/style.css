@@ -1,0 +1,164 @@
+/*This class is responsible to shift the ShareExpereince and AccessExpereince to right..*/
+
+
+.right_shift{
+  
+  margin-left: 750px;
+  margin-right:  0px;
+
+}
+
+
+@media (max-width: 1500px){
+    .right_shift{
+  
+  margin-left: 680px;
+  margin-right:  0px;
+
+}
+
+}
+
+.brief_container
+{  
+  
+   margin-top: 20px;
+   width: 1400px;
+   background-color: lavender;
+   border: 1px solid black;
+   border-radius: 10px;
+   box-shadow: 0px 0px 20px;
+   font-size: 13px;
+}
+
+
+.flex_main_container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.main_container{
+display: flex;
+flex-direction: column;
+background-color: lavender;
+font-size: 50px;
+width: 1000px;
+margin-top: 40px;
+box-shadow: 0 0 20px;
+border-radius: 10px;
+margin-bottom: 40px;
+border: 1px solid black;
+}
+
+
+.my_rows{
+   display: flex;
+   background-color: lavender;
+   height: 70px;
+   justify-content: space-around;
+   margin-top: 10px;
+}
+
+
+.first_col{
+     display: flex;
+     align-items: center;
+     background-color: lavender;
+
+  }
+
+
+ .label_style{
+  display: flex;
+  background-color: #f3f3f3;
+  color: dimgray;
+  width: 120px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #CCC;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+} 
+
+
+.text_style{
+  display: flex;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  font-size: 15px ;
+  color: dimgray;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #CCC;
+  text-align: center;
+  
+}
+
+
+.date_drop_down{
+
+  display: flex;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  background-color: white;
+  font-size: 20px ;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  border: 1px solid #CCC;
+  font-size: 15px;
+  color: dimgray;
+}
+
+
+
+.text_label_row{
+   display: flex;
+   background-color: lavender;
+   height: 70px;
+   justify-content: left;
+   margin-top: 10px;
+   align-items: center;
+}
+
+
+.textarea_label{
+
+  background-color: #f3f3f3;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  border-radius: 10px;
+  color: dimgray; 
+  border: 1px solid #ccc;
+}
+
+
+.button_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.button_style{
+  width: 150px;
+  background-color: #f3f3f3;
+  height: 40px;
+  font-size: 20px;
+  color: dimgray;
+  border-radius: 10px;
+}
+
