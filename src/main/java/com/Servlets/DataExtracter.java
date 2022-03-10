@@ -1,5 +1,9 @@
 package com.Servlets;
 
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +14,7 @@ import com.BackendOperations.DataSetter;
 
 @WebServlet("/Extractor")
 public class DataExtracter extends HttpServlet{
-        public void doPost(HttpServletRequest req , HttpServletResponse res){
+        public void doPost(HttpServletRequest req , HttpServletResponse res) throws ServletException, IOException{
         DataSetter setter = new DataSetter();
         DataPersister DP=new DataPersister();
         String fName=req.getParameter("fName");
@@ -27,7 +31,7 @@ public class DataExtracter extends HttpServlet{
         
         Exp=setter.manipulateExp(Exp);
         DP.persistData(comId, comName, fName, mName, lName, visDay, visMonth, visYear, CTC, noRounds, Exp);
-        
-        
+        RequestDispatcher rd=req.getRequestDispatcher("ShareExp.html");
+        rd.forward(req, res);
         }
 }

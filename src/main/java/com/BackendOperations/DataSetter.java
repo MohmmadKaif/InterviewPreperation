@@ -24,7 +24,7 @@ public Candidate setCandidateData(String fName,String mName,String lName,
 	
 	candidate.setfName(fName);
     candidate.setmName(mName);
-    candidate.setlNmae(lName);
+    candidate.setlName(lName);
     candidate.setVisDay(visDay);
     candidate.setVisMonth(visMonth);
     candidate.setVisYear(visYear);
@@ -43,7 +43,7 @@ public String manipulateExp( String Exp ) {
 	for(int i=0;i<Exp.length();i++) {
 		
 		if(Exp.charAt(i) =='\n'){
-			temp+='`';
+			temp+='~';
 			newExp+=temp;
 		    temp="";
 		}
@@ -53,6 +53,7 @@ public String manipulateExp( String Exp ) {
 		}
 	   
 	}
+	newExp+=temp;
 	return newExp;
 }
 

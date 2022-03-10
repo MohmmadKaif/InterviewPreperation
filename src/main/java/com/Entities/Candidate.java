@@ -1,6 +1,7 @@
 package com.Entities;
 import java.time.LocalDate;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,7 +15,7 @@ public class Candidate {
 	private long candId;
     private String fName;
     private String mName;
-    private String lNmae;
+    private String lName;
     private String visDay;
     private String visMonth;
     private String visYear;
@@ -23,6 +24,7 @@ public class Candidate {
     private String postYear;
     private String CTC;
     private int noRounds;
+    @Column(length=1000)
     private String Exp;
     @ManyToOne
     private Company company;
@@ -45,11 +47,11 @@ public class Candidate {
 	public void setmName(String mName) {
 		this.mName = mName;
 	}
-	public String getlNmae() {
-		return lNmae;
+	public String getlName() {
+		return lName;
 	}
-	public void setlNmae(String lNmae) {
-		this.lNmae = lNmae;
+	public void setlName(String lName) {
+		this.lName = lName;
 	}
 	public String getVisDay() {
 		return visDay;
